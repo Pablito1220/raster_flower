@@ -1,0 +1,76 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Genath-LightIta.otf);
+}
+
+html,body{
+  background-color:0;
+    font-family: myFirstFont;
+    cursor: none;
+    overflow:hidden;
+
+-webkit-touch-callout: none;
+-webkit-user-select: none; /* Webkit */
+-moz-user-select: none;    /* Firefox */
+-ms-user-select: none;     /* IE 10  */
+-o-user-select: none;
+user-select: none;
+
+}
+
+.active {
+  width:100%;
+  height:100%;
+  opacity: 1;
+  top:5px;
+}
+.desactive {
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:200%;
+}
+intro{
+  width:100%;
+}
+#intro {
+  position: absolute;
+  color:white;
+  font-size:36px;
+  width:35%;
+  height:100vh;
+  opacity: 1;
+  transition-property: top;
+  transition-duration: 1s;
+}
+#titre{
+left:5%;
+  color:white;
+  top: 5px;
+font-size: 144px;
+    margin: 5%;
+}
+.loader{
+  margin-top: 10vh;
+  margin-left: 60vw;
+  border: 10px solid lightgrey; 
+  border-top: 10px solid blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+#pixiContainer{
+  text-align: center;
+  z-index: 100;
+}
+/* #loading{
+  font-size: 24px;
+  position: absolute;
+  bottom:10px;
+} */
